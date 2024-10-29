@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pour centrer le bouton au milieu de la page */
+.button-container {
+    /* Flexbox permet de centrer facilement */
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    height: 100vh;
+    /* Prend toute la hauteur de l'écran */
+    background-color: #f0f0f0;
+}
+
+/* Style du bouton */
+.btn {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Petit effet quand on passe la souris sur le bouton */
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* La modal (cachée par défaut) */
+.modal {
+    display: none;
+    /* Cache la modal au départ */
+    position: fixed;
+    /* Reste fixe même si on scrolle */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Fond noir transparent */
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* Centre le contenu de la modal */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Le contenu de la modal */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+/* Le bouton pour fermer la modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #777;
+}
+
+/* Change la couleur au survol du bouton fermer */
+.close:hover {
+    color: black;
+}
